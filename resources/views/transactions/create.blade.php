@@ -1,4 +1,4 @@
-
+@extends('layouts.app')
 <form action="{{url('/transactions/store')}}" method="POST">
 {{csrf_field()}}
 <label for="Nombre">{{'Nombre'}}<label>

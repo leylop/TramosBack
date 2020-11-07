@@ -13,7 +13,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body background='../images/fondo.webp'>
+<body>
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
@@ -28,9 +28,9 @@
                     </button>
 
                     <!-- Branding Image -->
-                    {{--  <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="{{ url('../images/fondo 2.webp') }}">
                         TRAMOS
-                    </a>  --}}
+                    </a>  
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">

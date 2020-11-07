@@ -14,7 +14,8 @@ class TransactionsController extends Controller
      */
     public function index()
     {
-    return view('transactions.index');
+    $datos['transactions']=transactions::paginate(5);
+    return view('transactions.index',$datos);
     }
 
     /**

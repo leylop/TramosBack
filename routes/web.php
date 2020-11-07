@@ -19,15 +19,19 @@ Route::get('/', function () {
 
 // Route::get('/transactions/create', 'TransactionsController@create');
 
-// Route::get('/transactions/graphs', function () {
-//     return view('transactions.transactionsBI');
-// });
-Route::get('/transactions/index','TransactionsController@index');
+ Route::get('/transactions/graphs', function () {
+     return view('transactions.transactionsBI');
+ });
+Route::any('/transactions/index','TransactionsController@index');
 Route::get('/transactions/create','TransactionsController@create');
 Route::get('/transactions/show','TransactionsController@show');
 Route::get('/transactions/edit','TransactionsController@edit');
 Route::get('/transactions/update','TransactionsController@update');
 Route::any('/transactions/store','TransactionsController@store');
+Route::any('/transactions/store','TransactionsController@store');
+
+
+Auth::routes();
 
 
 Auth::routes();
